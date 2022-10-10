@@ -3,18 +3,17 @@ package com.company;
 public class Task2 {
     public static void main(String[] args) {
 /*В диапазоне [1..10] найти количество чисел, которые делятся на 2 или на 3.*/
-        int a = 0,b = 0;
+        int count = 0;
         for (int i = 1; i<=10; i++ ){
             if (i%2 == 0 && i%3 == 0){
-                a++;
-                b++;
+               count++;
             }else if (i%2 == 0){
-                a++;
+                count++;
             }else if (i%3 == 0){
-                b++;
+               count++;
             }
 
         }
-        System.out.printf("Количество числе которые делятся на 2 : %d , а на 3 : %d",a,b);
+        System.out.printf("Количество числе которые делятся на 2 и на 3 : %d",count);
     }
 }
